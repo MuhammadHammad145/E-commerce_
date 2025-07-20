@@ -1,0 +1,48 @@
+@import "./scss/bootstrap";
+@import "./scss/screen";
+@import "./scss/auth";
+   
+
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.body{
+  background-color: #000000;
+}
+main{
+  flex: 1 0 auto;
+}
+
+.hero{
+  background: #C02425;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #C02425, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #C02425, #0a0902); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.top{
+  background: #C02425;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #C02425, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #C02425, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.card{
+  background: #1b1b1b21;
+  border: 0.5px solid rgb(230, 155, 18);
+  // box-shadow: rgba(252, 175, 31) 0px 2px;
+   min-height: 120px;  // ✅ This ensures all are equal height
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button-carousel {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.button-carousel:hover {
+  border: 1px solid rgb(230, 155, 18) !important;
+  box-shadow: 0 0 5px rgba(230, 155, 18, 0.5);
+}
